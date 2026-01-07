@@ -1,7 +1,8 @@
-#
+# Make annotations strings automatically if not defined
 from __future__ import annotations
 
 from dataclasses import dataclass
+#Import Tuple type hint
 from typing import Tuple
 
 import numpy as np
