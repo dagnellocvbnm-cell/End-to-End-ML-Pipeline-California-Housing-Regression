@@ -1,3 +1,4 @@
+#
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -15,6 +16,8 @@ class DatasetSplit:
     y_test: np.ndarray
     feature_names: Tuple[str, ...]
     target_name: str
+
+tuple [1,1]
 
 def load_and_split(*, test_size: float, random_seed: int) -> DatasetSplit:
     """
