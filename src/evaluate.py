@@ -1,11 +1,15 @@
+# Make annotations strings automatically if not defined
 from __future__ import annotations
 
 import json
 import os
+#Type-hinting utilities
 from typing import Dict, Any
 
 import joblib
 import numpy as np
+
+#import MAE, MSE, R^2
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 from src.config import CFG
