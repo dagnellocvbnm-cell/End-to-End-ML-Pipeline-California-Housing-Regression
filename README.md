@@ -8,7 +8,7 @@ This project builds a reproducible regression ML pipeline in Python using scikit
 3. Preprocess: median imputation + standard scaling (leakage-safe Pipeline)
 4. Train: baseline models (DummyRegressor vs Ridge regression)
 5. Evaluate: MAE, RMSE, R²
-6. Artifacts: save trained models + metrics JSON
+6. Artifacts: generate trained model artifacts (.joblib) and evaluation metrics (.json) locally
 
 ## How to Run
 ```bash
