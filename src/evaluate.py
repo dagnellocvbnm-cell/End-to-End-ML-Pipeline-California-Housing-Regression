@@ -28,7 +28,7 @@ def regression_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[str, floa
       - R2: 1 - SS_res/SS_tot
     """
     mae = float(mean_absolute_error(y_true, y_pred))
-    rmse = float(mean_squared_error(y_true, y_pred, squared=False))
+    rmse = float(mean_squared_error(y_true, y_pred) ** .5)
     r2 = float(r2_score(y_true, y_pred))
     return {"mae": mae, "rmse": rmse, "r2": r2}
 
